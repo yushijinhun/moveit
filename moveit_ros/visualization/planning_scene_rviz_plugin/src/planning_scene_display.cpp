@@ -66,7 +66,7 @@ namespace moveit_rviz_plugin
 // Base class contructor
 // ******************************************************************************************
 PlanningSceneDisplay::PlanningSceneDisplay(bool listen_to_planning_scene, bool show_scene_robot)
-  : Display(), planning_scene_needs_render_(true), current_scene_time_(0.0f)
+  : Display(), planning_scene_needs_render_(true), robot_state_needs_render_(true), current_scene_time_(0.0f)
 {
   move_group_ns_property_ = new rviz::StringProperty("Move Group Namespace", "",
                                                      "The name of the ROS namespace in "
